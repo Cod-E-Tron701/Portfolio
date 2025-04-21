@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="styless.css" rel="stylesheet">
+    <title>Jerin Cherian | Portfolio</title>
+    <meta name="description" content="Jerin Cherian - AI & ML Specialist Portfolio">
+    <script type="module" src="newjs.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="first">
+        <div class="sidebar">
+            <a href="#home" class="nav-item" title="Home"><img src="/assets/home_2.png" alt="Home"></a>
+            <a href="#projects" class="nav-item" title="Projects"><img src="/assets/proj_1.png" alt="Projects"></a>
+            <a href="#skills" class="nav-item" title="Skills"><img src="/assets/skills.png" alt="Skills"></a>
+            <a href="#abt" class="nav-item" title="About Me"><img src="/assets/back.png" alt="About"></a>
+            <a href="#contact" class="nav-item" title="Contact"><img src="/assets/contact.png" alt="Contact"></a>
+        </div>
+    </div>
+    <div class="page">
+        <fieldset id="home" class="f1">
+            <div class="first">
+                <div>
+                    <h1>JERIN CHERIAN</h1>
+                    <p>Hi, I'm a passionate tech enthusiast and a sophomore at VIT Chennai
+                        specializing in Artificial Intelligence and Machine Learning. I thrive at the intersection 
+                        of cutting-edge technology and creative problem-solving, constantly exploring how AI and ML
+                        can reshape the world around us. Join me on this journey as I dive into exciting projects,
+                        share insights, and build solutions for tomorrow's challenges.</p>
+                </div>
+                <div>
+                    <img src="/assets/jerin image.jpg" alt="Jerin Cherian">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset id="projects" class="f2">
+            <h2>PROJECTS</h2>
+        </fieldset>
+    
+        <fieldset class="f3">
+            <div class="second">
+                <div class="s1">
+                    <h2><b>Culinary Hub</b></h2>
+                    <a href="https://github.com/SrinijaG2402/cullinaryhub" target="_blank">
+                        <img class="i1" src="/assets/s1.png" alt="Culinary Hub Project">
+                    </a>
+                    <p class="secp">An opensource innovation developed during Fossit'24 with my team. Inspired by the version control concept of Git,
+                        applied to the world of food and local delicacies. It offers a robust web application for people to discover, modify and share recipes.</p>
+                </div>
+                <div class="s2">
+                    <h2><b>BeMy Vision</b></h2>
+                    <a href="https://github.com/HappyHaru21/BeMyVision" target="_blank">
+                        <img class="i1" src="/assets/s2.png" alt="BeMyVision Project">
+                    </a>
+                    <p class="secp">A Streamlit based mobile application which uses a machine learning model which takes
+                        video footage as input, recognizes objects, understands the context and vocalizes it for the visually impaired.</p>
+                </div>
+            </div>
+        </fieldset>
+    
+        <fieldset id="skills" class="f2">
+            <h2>SKILLS</h2>
+        </fieldset>
+        <fieldset class="f3">
+            <div id="Web Development" class="tpback">
+                <p class="tp">Web Development</p><br>
+                <canvas class="canvas1" id="Html" height="200px" width="200px"></canvas>
+                <canvas class="canvas1" id="CSS" height="200px" width="200px"></canvas>
+                <canvas class="canvas1" id="JavaScript" height="200px" width="200px"></canvas>
+            </div>
+            <div id="Programming" class="tpback">
+                <p class="tp">Programming</p><br>
+                <canvas class="canvas1" id="Python" height="200px" width="200px"></canvas>
+                <canvas class="canvas1" id="C/C++" height="200px" width="200px"></canvas>
+                <canvas class="canvas1" id="JAVA" height="200px" width="200px"></canvas>
+            </div>
+            <div id="Databases" class="tpback">
+                <p class="tp">Databases</p><br>
+                <canvas class="canvas1" id="MySQL" height="200px" width="200px"></canvas>
+                <canvas class="canvas1" id="OracleDB" height="200px" width="200px"></canvas>
+            </div>
+        </fieldset>
+
+        <fieldset id="abt" class="f2">
+            <h2>ABOUT ME</h2>
+        </fieldset>
+        <fieldset class="f3">
+            <div class="a1">
+                <p><b>BTECH CSE AI&ML<br>VIT CHENNAI</b><br>
+                <b>CGPA  9.73</b></p>
+            </div>
+            <div class="a2">
+                <p><b>Higher Secondary<br>Placid Vidya Vihar</b><br>
+                <b>Score 89%</b></p>
+            </div>
+            <div class="a3">
+                <p><b>High School<br>MarThoma Residential School</b><br>
+                <b>Score 97%</b></p>
+            </div>
+        </fieldset>
+
+        <fieldset id="contact" class="f2">
+            <h2>CONTACT ME</h2>
+        </fieldset>
+        <fieldset class="f32">
+            <div class="first">
+                <div class="t1">
+                    <h3 id="type"></h3>
+                </div>
+                <div>
+                    <form actions="mailto:jerin.cherian005@gmail.com" id="contact" class="container">
+                        <fieldset class="f8">
+                            <label>Name  :</label>
+                            <input type="text" id="name"  placeholder="Your Name" required><br>
+                            <label>Email :</label>
+                            <input type="text" id="email" placeholder="Your Email" required><br>
+                            <label>Phone :</label>
+                            <input type="text" id="phone"  placeholder="Your Phone Number" required><br><br>
+                            <textarea id="message"  rows="7" cols="40" placeholder="Your Message" oninput="expand(this)"></textarea><br>
+                            <button  onclick="validate()">Send</button>
+                            <p id="success"></p>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </fieldset>
+
+
+        <div class="bottom">
+            <a href="https://github.com/Cod-E-Tron701" target="_blank">GITHUB</a>
+            <a href="https://www.linkedin.com/in/jerin-cherian-831a7b215/" target="_blank">LinkedIn</a>
+            <a href="mailto:jerin.cherian005@gmail.com">GMail</a>
+        </div>
+    </div>
+</body>
+</html>
